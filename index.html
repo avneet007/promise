@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+	
+  
+
+  var abc = new Promise(function(resolve,reject){
+
+          
+          var taskdone=false;
+
+          if(taskdone){
+
+          	  resolve("task complete");
+          }else{
+             
+              reject("task not complete");
+
+          }
+
+
+    })
+
+  
+   abc.then(function(fromresolve){
+        
+       console.log("fromresolve"+fromresolve)
+
+   }).catch(function(fromreject){
+
+   	       console.log("fromresolve"+fromreject)
+   })
+
+
+
+  /*var officeaao = function(){
+
+  	 return new Promise(function(resolve,reject){
+
+  	 	  reject("office aa gye");
+  	 });
+  }
+
+
+
+   var chatcompletekero = function(){
+
+  	return new Promise(function(resolve,reject){
+
+  	 	  reject("kaam complete ho gya ");
+  	 });
+  }
+
+
+
+  
+   var gharjao = function(){
+
+  	 return new Promise(function(resolve,reject){
+
+  	 	  reject("ghar jao");
+  	 });
+  }
+
+*/
+
+
+  /* officeaao().then(function(result){
+   	   console.log(result)
+   	   return chatcompletekero();;
+   }).then(function(result){
+        console.log(result)
+   	    return gharjao();
+   }).then(function(result){
+       console.log(result)
+   	  //console.log("all done");
+   }).catch(function(){
+      
+       //console.log("not done");
+
+   })*/
+
+
+
+/*  Promise.all([officeaao(),chatcompletekero(),gharjao()]).then(function(){
+
+  	  console.log("all complete");
+  })*/
+
+  /*Promise.race([officeaao(),chatcompletekero(),gharjao()]).then(function(){
+
+  	  console.log("one is complete complete");
+  }).catch(function(){
+         
+          console.log("not one one is completed");
+
+  })*/
+
+
+</script>
+
+
+</html>
